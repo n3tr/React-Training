@@ -1,0 +1,11 @@
+{
+  "gitbook": ">= 3.0.0",
+  "title": "React Training",
+  "root": "docs",
+  "plugins": ["prism", "-highlight", "github"],
+  "pluginsConfig": {
+    "github": {
+      "url": "https://github.com/n3tr/react-training/"
+    }
+  }
+}
