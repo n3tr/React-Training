@@ -1,0 +1,32 @@
+{
+  "name": "react-training",
+  "version": "1.0.0",
+  "description": "Build with gitbook.io (see also: https://toolchain.gitbook.com/setup.html)",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "gitbook-plugin-github": "^2.0.0",
+    "gitbook-plugin-prism": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:clean": "rimraf _book",
+    "docs:prepare": "gitbook install",
+    "docs:watch": "npm run docs:prepare && gitbook serve",
+    "docs:build": "npm run docs:prepare && gitbook build",
+    "docs:publish": "npm run docs:clean && npm run docs:build && cd _book && git init && git commit --allow-empty -m 'update book' && git checkout -b gh-pages && touch .nojekyll && git add . && git commit -am 'update book' && git push git@github.com:n3tr/react-training gh-pages --force"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/n3tr/React-Training.git"
+  },
+  "author": "Jirat Ki. (n3tr)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/n3tr/React-Training/issues"
+  },
+  "homepage": "https://github.com/n3tr/React-Training#readme"
+}
