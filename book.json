@@ -2,6 +2,9 @@
   "gitbook": ">= 3.0.0",
   "title": "React Training",
   "root": "docs",
+  "structure": {
+    "summary": "README.md"
+  },
   "plugins": ["prism", "-highlight", "github"],
   "pluginsConfig": {
     "github": {

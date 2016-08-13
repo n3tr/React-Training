@@ -21,12 +21,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/n3tr/React-Training.git"
+    "url": "git+https://github.com/n3tr/react-training.git"
   },
   "author": "Jirat Ki. (n3tr)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/n3tr/React-Training/issues"
+    "url": "https://github.com/n3tr/react-training/issues"
   },
-  "homepage": "https://github.com/n3tr/React-Training#readme"
+  "homepage": "https://n3tr.github.io/react-training/"
 }
