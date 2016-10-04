@@ -1,6 +1,6 @@
 # Setup React Project
 
-```sh
+```bash
 git clone https://github.com/n3tr/sample-react-project-setup.git
 npm install
 npm start
@@ -21,7 +21,7 @@ see also : https://github.com/n3tr/sample-react-project-setup
 
 ## or Manual Step-by-Step setup
 
-```sh
+```bash
 mkdir sample-react-project
 npm init
 #
@@ -35,7 +35,7 @@ ls
 
 ### Dependencies
 
-```sh
+```bash
 # React
 npm install --save react react-dom
 
@@ -138,7 +138,7 @@ npm start
 
 ### ESLint Setup
 
-```sh
+```bash
 (
   export PKG=eslint-config-airbnb;
   npm info "$PKG" peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs npm install --save-dev "$PKG"
@@ -147,7 +147,7 @@ npm start
 
 Which produces and runs a command like:
 
-```sh
+```bash
 npm install --save-dev eslint-config-airbnb eslint@^2.9.0 eslint-plugin-jsx-a11y@^1.2.0 eslint-plugin-import@^1.7.0 eslint-plugin-react@^5.0.1
 ```
 

@@ -18,7 +18,7 @@ Just choose only one method to install NodeJS
 
 Install HomeBrew
 
-```sh
+```bash
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
@@ -31,16 +31,40 @@ brew install node
 
 Download NodeJS package from https://nodejs.org/en/
 
+#### (Option) Node Package Manager via N
+
+See: https://github.com/tj/n
+
+```bash
+npm install -g n
+```
+
 ---
 
 ## Install [Webpack](https://webpack.github.io/)
 
 Install Webpack and Webpack Dev Server (for development)
 
-```sh
+```bash
 npm install -g webpack
 npm install -g webpack-dev-server
 ```
+
+---
+
+## Create React App
+
+```bash
+npm install -g create-react-app
+```
+
+See also: https://github.com/facebookincubator/create-react-app
+
+---
+
+## React Devtools (Chrome Extension)
+
+Download: https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi
 
 ---
 
