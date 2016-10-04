@@ -1,0 +1,369 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>Setup React Project · React Training</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../2-js-primer/" />
+    
+    
+    <link rel="prev" href="../0-node-setup/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../0-node-setup/">
+            
+                <a href="../0-node-setup/">
+            
+                    
+                    NodeJS and Environment Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Setup React Project
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../2-js-primer/">
+            
+                <a href="../2-js-primer/">
+            
+                    
+                    Javascript Primer
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Setup React Project</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="setup-react-project">Setup React Project</h1><pre><code class="lang-bash"><span class="token function">git</span> clone https://github.com/n3tr/sample-react-project-setup.git
+npm <span class="token function">install</span>
+npm start
+
+<span class="token comment" spellcheck="true"># open http://localhost:3333</span></code></pre>
+<p>see also : <a href="https://github.com/n3tr/sample-react-project-setup" target="_blank">https://github.com/n3tr/sample-react-project-setup</a></p><h3 id="whats-inside">What&apos;s inside</h3><ul><li>React / ReactDOM
+</li>
+<li>Webpack / Webpack Dev Server
+</li>
+<li>Babel (Preset: ES2015, React)
+</li>
+<li>AirBnb ESLint
+</li></ul>
+<hr><h2 id="or-manual-step-by-step-setup">or Manual Step-by-Step setup</h2><pre><code class="lang-bash"><span class="token function">mkdir</span> sample-react-project
+npm init
+<span class="token comment" spellcheck="true">#</span>
+<span class="token comment" spellcheck="true"># name: (sample-react-project)</span>
+<span class="token comment" spellcheck="true">#...</span>
+<span class="token comment" spellcheck="true"># Is this ok? (yes)</span>
+<span class="token comment" spellcheck="true">#</span>
+<span class="token function">ls</span>
+<span class="token comment" spellcheck="true"># package.json</span></code></pre>
+<h3 id="dependencies">Dependencies</h3><pre><code class="lang-bash"><span class="token comment" spellcheck="true"># React</span>
+npm <span class="token function">install</span> --save react react-dom
+
+<span class="token comment" spellcheck="true"># Webpack both local and global</span>
+npm <span class="token function">install</span> --save-dev webpack webpack-dev-server
+npm <span class="token function">install</span> -g webpack webpack-dev-server
+
+<span class="token comment" spellcheck="true"># babel</span>
+npm <span class="token function">install</span> --save-dev babel-loader babel-core babel-preset-es2015 babel-preset-react</code></pre>
+<h3 id="project-structure-setup">Project Structure Setup</h3><pre><code>src/
+  app.js
+.babelrc
+.eslintrc
+package.json
+webpack.config.js
+index.html</code></pre>
+<p><code>webpack.config.js</code></p><pre><code>var path = require(&apos;path&apos;)
+
+module.exports = {
+  entry: &apos;./src/app.js&apos;,
+  output: {
+    path: path.resolve(__dirname, &quot;static&quot;),
+    filename: &apos;bundle.js&apos;
+  },
+  devServer: {
+    inline: true,
+    port: 3333,
+    path: &apos;static&apos;
+  },
+  module: {
+    loaders: [
+      { test: /\.js$/, exclude: /node_modules/, loader: &quot;babel&quot; }
+    ]
+  }
+}</code></pre>
+<p><code>index.html</code></p><pre><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>!doctype</span> <span class="token attr-name">html</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>en<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>utf-8<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>viewport<span class="token punctuation">&quot;</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>width<span class="token punctuation">=</span>device-width, initial-scale<span class="token punctuation">=</span>1<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>React Sample Setup<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>root<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>bundle.js<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span></code></pre>
+<p><code>.babelrc</code></p><pre><code>{
+  &quot;presets&quot;: [ &quot;es2015&quot;, &quot;react&quot; ]
+}</code></pre>
+<p><code>app.js</code></p><pre><code>import React from &apos;react&apos;
+import ReactDOM from &apos;react-dom&apos;
+
+// App Component
+class App extends React.Component {
+  render() {
+    return <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>Hello, World!!<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+  }
+}
+
+// Render Component
+const root = document.getElementById(&apos;root&apos;)
+ReactDOM.render(<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>App</span> <span class="token punctuation">/&gt;</span></span>, root)</code></pre>
+<p>add script to <code>package.json</code></p><pre><code>&quot;start&quot;: &quot;webpack-dev-server&quot;</code></pre>
+<p>Start by</p><pre><code>webpack-dev-server
+# or
+npm start</code></pre>
+<hr><h2 id="extra">Extra</h2><h3 id="eslint-setup">ESLint Setup</h3><pre><code class="lang-bash"><span class="token punctuation">(</span>
+  <span class="token function">export</span> PKG<span class="token operator">=</span>eslint-config-airbnb<span class="token punctuation">;</span>
+  npm info <span class="token string">&quot;<span class="token variable">$PKG</span>&quot;</span> peerDependencies --json <span class="token operator">|</span> <span class="token function">command</span> <span class="token function">sed</span> <span class="token string">&apos;s/[\{\},]//g ; s/: /@/g&apos;</span> <span class="token operator">|</span> <span class="token function">xargs</span> npm <span class="token function">install</span> --save-dev <span class="token string">&quot;<span class="token variable">$PKG</span>&quot;</span>
+<span class="token punctuation">)</span></code></pre>
+<p>Which produces and runs a command like:</p><pre><code class="lang-bash">npm <span class="token function">install</span> --save-dev eslint-config-airbnb eslint@^2.9.0 eslint-plugin-jsx-a11y@^1.2.0 eslint-plugin-import@^1.7.0 eslint-plugin-react@^5.0.1</code></pre>
+<p><code>.eslintrc</code></p><pre><code class="lang-js"><span class="token punctuation">{</span>
+  <span class="token string">&quot;extends&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;airbnb&quot;</span>
+<span class="token punctuation">}</span></code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../0-node-setup/" class="navigation navigation-prev " aria-label="Previous page: NodeJS and Environment Setup">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../2-js-primer/" class="navigation navigation-next " aria-label="Next page: Javascript Primer">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Setup React Project","level":"1.3","depth":1,"next":{"title":"Javascript Primer","level":"1.4","depth":1,"path":"2-js-primer/README.md","ref":"2-js-primer/README.md","articles":[]},"previous":{"title":"NodeJS and Environment Setup","level":"1.2","depth":1,"path":"0-node-setup/README.md","ref":"0-node-setup/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["prism","-highlight","github"],"root":"docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/n3tr/react-training/"},"prism":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"README.md"},"variables":{},"title":"React Training","gitbook":">= 3.0.0"},"file":{"path":"1-setup-react-project/README.md","mtime":"2016-10-04T09:13:23.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-10-04T09:43:28.374Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
