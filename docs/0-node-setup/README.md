@@ -31,7 +31,7 @@ brew install node
 
 Download NodeJS package from https://nodejs.org/en/
 
-#### (Option) Node Package Manager via N
+#### (Optional) Node Package Manager via N
 
 See: https://github.com/tj/n
 
